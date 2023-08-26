@@ -1,26 +1,44 @@
 <template>
-  <img alt="Vue logo" src="./assets/logo.png">
-  <HelloWorld msg="Welcome to Your Vue.js App"/>
+  <card-component
+    title="Joseph Marcotte"
+    linkedin="https://www.linkedin.com/in/joe-marcotte"
+    email="joemarcos99@gmail.com"
+    github="https://github.com/Joemarcos99"
+    resumePath="/Joseph-Marcotte-Resume.pdf"
+  />
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+import CardComponent from "./components/CardComponent.vue";
 
 export default {
-  name: 'App',
+  name: "App",
   components: {
-    HelloWorld
-  }
-}
+    CardComponent,
+  },
+};
 </script>
 
 <style>
+@import url("https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible:wght@400;700&display=swap");
+
 #app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
+  display: flex;
+  justify-content: center;
+  font-family: "Atkinson Hyperlegible";
+  font-weight: 400;
+  align-items: center;
+  min-height: 100vh;
+  background-size: cover;
+  background-position: center;
+  
+}
+
+body {
+  margin: 0;
+  background-image: url('../public/nature.jpg');
+  background-size: cover; /* Adjust as needed */
+  background-position: center; /* Adjust as needed */
+  /* Other styling properties if needed */
 }
 </style>
