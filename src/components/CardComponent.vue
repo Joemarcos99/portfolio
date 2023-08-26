@@ -75,6 +75,7 @@
     background-color: white;
     padding-left: 1rem;
     padding-right: 1rem;
+    text-align: center;
   }
   
   .links a {
